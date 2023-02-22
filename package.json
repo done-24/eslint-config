@@ -1,0 +1,20 @@
+{
+  "name": "@jj/eslint-config-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/done-24/eslint-config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/done-24/eslint-config/issues"
+  },
+  "homepage": "https://github.com/done-24/eslint-config#readme"
+}
