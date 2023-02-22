@@ -2,19 +2,30 @@
   "name": "@jj/eslint-config-monorepo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/done-24/eslint-config#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/done-24/eslint-config.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/done-24/eslint-config/issues"
   },
-  "homepage": "https://github.com/done-24/eslint-config#readme"
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "pnpm -r run test",
+    "prepare": "pnpm -r run stub",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+  },
+  "devDependencies": {
+    "@jj/eslint-config": "*",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.33.0",
+    "eslint-plugin-jj": "workspace:*",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5"
+  }
 }
